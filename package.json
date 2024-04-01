@@ -1,6 +1,6 @@
 {
   "name": "@xhmikosr/bin-check",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "description": "Check if a binary is working",
   "license": "MIT",
   "repository": {
