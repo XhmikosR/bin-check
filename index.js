@@ -1,4 +1,4 @@
-import {execa, execaSync} from 'execa';
+import execa from 'execa';
 import {isexe, sync as isexeSync} from 'isexe';
 
 const binCheck = (bin, args) => {
@@ -26,7 +26,7 @@ binCheck.sync = (bin, args) => {
 		throw new Error(`Couldn't execute the "${bin}" binary. Make sure it has the right permissions.`);
 	}
 
-	return execaSync(bin, args).exitCode === 0;
+	return execa.sync(bin, args).exitCode === 0;
 };
 
 export default binCheck;
