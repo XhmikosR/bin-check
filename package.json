@@ -3,7 +3,10 @@
   "version": "6.0.0",
   "description": "Check if a binary is working",
   "license": "MIT",
-  "repository": "XhmikosR/bin-check",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XhmikosR/bin-check.git"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -44,9 +47,9 @@
     "ava": "^6.1.2",
     "xo": "^0.58.0"
   },
-	"xo": {
-		"rules": {
-			"unicorn/prevent-abbreviations": "off"
-		}
-	}
+  "xo": {
+    "rules": {
+      "unicorn/prevent-abbreviations": "off"
+    }
+  }
 }
