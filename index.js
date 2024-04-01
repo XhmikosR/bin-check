@@ -1,5 +1,5 @@
 import execa from 'execa';
-import {isexe, sync as isexeSync} from 'isexe';
+import isexe from 'isexe';
 
 const binCheck = (bin, args) => {
 	if (!Array.isArray(args)) {
@@ -22,7 +22,7 @@ binCheck.sync = (bin, args) => {
 		args = ['--help'];
 	}
 
-	if (!isexeSync(bin)) {
+	if (!isexe.sync(bin)) {
 		throw new Error(`Couldn't execute the "${bin}" binary. Make sure it has the right permissions.`);
 	}
 
