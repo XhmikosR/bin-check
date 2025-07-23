@@ -1,4 +1,4 @@
-# bin-check [![CI](https://github.com/XhmikosR/bin-check/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/XhmikosR/bin-check/actions/workflows/ci.yml)
+# bin-check [![npm version](https://img.shields.io/npm/v/@xhmikosr/bin-check?logo=npm&logoColor=fff)](https://www.npmjs.com/package/@xhmikosr/bin-check) [![CI Status](https://img.shields.io/github/actions/workflow/status/XhmikosR/bin-check/ci.yml?branch=master&label=CI&logo=github)](https://github.com/XhmikosR/bin-check/actions/workflows/ci.yml?query=branch%3Amaster)
 
 > Check if a binary is working by checking its exit code
 
