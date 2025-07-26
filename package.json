@@ -40,8 +40,8 @@
     "test"
   ],
   "dependencies": {
-    "execa": "^5.1.1",
-    "isexe": "^2.0.0"
+    "isexe": "^2.0.0",
+    "tinyexec": "^1.0.1"
   },
   "devDependencies": {
     "ava": "~6.2.0",

@@ -21,12 +21,3 @@ test('async', async t => {
 		`Couldn't execute the "${__filename}" binary. Make sure it has the right permissions.`,
 	);
 });
-
-test('sync', t => {
-	t.true(binCheck.sync(bin[process.platform]));
-	t.throws(
-		binCheck.sync.bind(null, 'node', [__filename]),
-		undefined,
-		`Couldn't execute the "${__filename}" binary. Make sure it has the right permissions.`,
-	);
-});
