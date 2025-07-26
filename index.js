@@ -1,5 +1,5 @@
-import execa from 'execa';
 import isexe from 'isexe';
+import spawn from 'nano-spawn';
 
 const binCheck = (bin, args) => {
 	if (!Array.isArray(args)) {
@@ -12,21 +12,10 @@ const binCheck = (bin, args) => {
 				throw new Error(`Couldn't execute the "${bin}" binary. Make sure it has the right permissions.`);
 			}
 
-			return execa(bin, args);
+			return spawn(bin, args);
 		})
-		.then(result => result.exitCode === 0);
-};
-
-binCheck.sync = (bin, args) => {
-	if (!Array.isArray(args)) {
-		args = ['--help'];
-	}
-
-	if (!isexe.sync(bin)) {
-		throw new Error(`Couldn't execute the "${bin}" binary. Make sure it has the right permissions.`);
-	}
-
-	return execa.sync(bin, args).exitCode === 0;
+		// Could also try result.stderr === ''
+		.then(result => result.exitCode === undefined || result.exitCode === 0);
 };
 
 export default binCheck;
