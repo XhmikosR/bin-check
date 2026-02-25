@@ -40,7 +40,7 @@
     "test"
   ],
   "dependencies": {
-    "execa": "^8.0.1",
+    "execa": "^9.0.1",
     "isexe": "^4.0.0"
   },
   "devDependencies": {
