@@ -6,7 +6,7 @@
 ## Install
 
 ```sh
-npm install bin-check
+npm install @xhmikosr/bin-check
 ```
 
 
