@@ -40,11 +40,11 @@
     "test"
   ],
   "dependencies": {
-    "execa": "^9.0.1",
+    "execa": "^9.6.1",
     "isexe": "^4.0.0"
   },
   "devDependencies": {
-    "ava": "^6.4.1",
+    "ava": "^7.0.0",
     "xo": "^1.2.3"
   },
   "xo": {
