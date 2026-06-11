@@ -49,7 +49,6 @@
   },
   "xo": {
     "rules": {
-      "promise/prefer-await-to-then": "off",
       "unicorn/prevent-abbreviations": "off"
     }
   }
