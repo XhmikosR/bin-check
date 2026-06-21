@@ -25,7 +25,7 @@
     "fix": "xo --fix",
     "test": "npm run ava"
   },
-	"main": "index.js",
+  "main": "index.js",
   "type": "module",
   "exports": {
     ".": "./index.js"
