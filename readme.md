@@ -2,11 +2,13 @@
 
 > Check if a binary is working by checking its exit code
 
+
 ## Install
 
 ```sh
 npm install @xhmikosr/bin-check
 ```
+
 
 ## Usage
 
@@ -18,6 +20,7 @@ binCheck('/bin/sh', ['--version']).then(works => {
 	//=> true
 });
 ```
+
 
 ## API
 
@@ -41,6 +44,7 @@ Path to the binary.
 * Default: `['--help']`
 
 Arguments to run the binary with.
+
 
 ## License
 
