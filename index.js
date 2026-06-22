@@ -11,7 +11,7 @@ const binCheck = async (bin, args) => {
 		throw new Error(`Couldn't execute the "${bin}" binary. Make sure it has the right permissions.`);
 	}
 
-	const result = await execa(bin, args);
+	const result = await execa(bin, args, {reject: false});
 
 	return result.exitCode === 0;
 };
@@ -25,7 +25,7 @@ binCheck.sync = (bin, args) => {
 		throw new Error(`Couldn't execute the "${bin}" binary. Make sure it has the right permissions.`);
 	}
 
-	return execaSync(bin, args).exitCode === 0;
+	return execaSync(bin, args, {reject: false}).exitCode === 0;
 };
 
 export default binCheck;
